@@ -63,7 +63,7 @@ io.on('connection', (socket) => {
     });
   
     successfulPromise.then(message => {
-        io.sockets.emit("suka", {
+        io.sockets.emit("gpt", {
           message,
           user: 'AI',
           id: socket.id,

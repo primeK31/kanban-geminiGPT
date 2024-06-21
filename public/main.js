@@ -15,10 +15,9 @@ socket.on("message", message => {
     updateMessages();
 });
 
-socket.on("suka", suka => {
-    lol.innerText = suka.message;
-    console.log('blyat')
-    messages.push(suka);
+socket.on("gpt", gpt => {
+    lol.innerText = gpt.message;
+    messages.push(gpt);
     updateMessages();
 })
 
@@ -44,7 +43,6 @@ function updateUsers() {
 }
 
 function updateMessages() {
-  console.log('suka')
   messageList.textContent = "";
   for (let i = 0; i < messages.length; i++) {
     if(messages[i].message === '') {
