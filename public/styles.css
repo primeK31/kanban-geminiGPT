@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.chatbox {
+  background: #eee;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px #eee;
+  flex-flow: column;
+  height: 600px;
+  list-style: none;
+  display: flex;
+}
+
+#messagelist {
+  flex: 1;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+#messagelist .private {
+  background-color: rgb(130, 217, 134);
+  color: #fff;
+  margin-left: auto;
+}
+
+#messagelist li {
+  list-style: none;
+  background: white;
+  max-width: 250px;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 20px;
+}
+
+#messagelist p:first-child {
+  color: rgb(107, 107, 107);
+}
+
+
+form.inputbox {
+  display: flex;
+}
+
+form.inputbox input {
+  flex: 5;
+  padding: 12px 10px;
+}
+
+form.inputbox button {
+  padding: 3px;
+  background: rgb(130, 217, 134);
+  border-radius: 10px;
+  color: rgb(128, 128, 128);
+}
+
+#users {
+  padding-top: 20px;
+  list-style: none;
+  display: flex;
+  height: 100px;
+  flex-flow: row;
+}
+
+#users li {
+  background: white;
+  text-align: center;
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+}
